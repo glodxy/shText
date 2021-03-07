@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="required">
+    <CLASSES>
+      <root url="jar://E:/hibernate-release-5.4.3.Final/lib/required/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://E:/hibernate-release-5.4.3.Final/lib/required/javax.persistence-api-2.2.jar!/" />
+      <root url="file://E:/hibernate-release-5.4.3.Final/lib/required" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://E:/hibernate-release-5.4.3.Final/lib/required" recursive="false" />
+  </library>
+</component>

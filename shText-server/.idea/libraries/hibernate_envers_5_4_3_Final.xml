@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hibernate-envers-5.4.3.Final">
+    <CLASSES>
+      <root url="jar://E:/hibernate-release-5.4.3.Final/lib/envers/hibernate-envers-5.4.3.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

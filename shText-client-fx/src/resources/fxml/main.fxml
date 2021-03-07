@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXTabPane?>
+<VBox prefHeight="600.0" prefWidth="900.0" stylesheets="@../css/MainScene.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.sample.MainController">
+  <children>
+    <SplitPane dividerPositions="0.2505567928730512" focusTraversable="true" minHeight="400" maxHeight="Infinity" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <items>
+            <VBox>
+               <children>
+                  <HBox id="tinyBar" spacing="1" VBox.vgrow="SOMETIMES" >
+                     <children>
+                        <TextField fx:id="searchField" maxWidth="Infinity" prefHeight="23.0" prefWidth="138.0" HBox.hgrow="ALWAYS" />
+                        <JFXButton prefHeight="13.0" maxWidth="60" prefWidth="13.0" ripplerFill="TRANSPARENT" styleClass="searchButton" HBox.hgrow="SOMETIMES"/>
+                        <HBox prefHeight="30.0" maxWidth="Infinity" prefWidth="107.0" style="-fx-alignment: center_right;" HBox.hgrow="SOMETIMES">
+                           <children>
+                              <JFXButton maxWidth="60" prefHeight="13.0" prefWidth="13.0" ripplerFill="#fffdf8" styleClass="refreshButton" HBox.hgrow="SOMETIMES" onAction="#onRefreshActioned"/>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <JFXTreeView fx:id="treeView" maxHeight="1020" prefHeight="514.0" prefWidth="222.0" VBox.vgrow="ALWAYS"/>
+               </children>
+            </VBox>
+        <JFXTabPane id="tabPane" maxHeight="-Infinity" minHeight="450" maxWidth="Infinity" minWidth="500" prefHeight="-1.0" prefWidth="-1.0" fx:id="tab" tabClosingPolicy="SELECTED_TAB" >
+            <tabs>
+
+            </tabs>
+        </JFXTabPane>
+      </items>
+    </SplitPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+          <textFill>
+            <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+          </textFill>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label font="$x3" maxWidth="-1.0" text="Right status" textFill="$x4" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>

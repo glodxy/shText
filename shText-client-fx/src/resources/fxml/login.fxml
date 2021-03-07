@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<GridPane id="loginPanel" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.sample.Controller"
+          stylesheets="@../css/LoginPanel.css">
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" alignment="TOP_RIGHT">
+        <JFXButton id="registButton" fx:id="rb" buttonType="FLAT" text="注册" styleClass="registButton" ripplerFill="lightskyblue" onAction="#onRegistClicked" />
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="hbox">
+    <Text text="账号" fill="white" styleClass="text"/>
+      <JFXTextField id="act" fx:id="act" promptText="ACCOUNT"/>
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="2" styleClass="hbox">
+    <Text text="密码" fill="white" styleClass="text"/>
+    <JFXPasswordField id="psw" fx:id="psw" promptText="PASSWORD" />
+    </HBox>
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" style="-fx-padding: 20" styleClass="hbox">
+        <JFXButton  id="loginButton" fx:id="lb" styleClass="loginButton" onAction="#onLoginClicked" buttonType="RAISED" text="登录" />
+    </HBox>
+</GridPane>

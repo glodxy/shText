@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/ChapterScene.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.sample.ChapterController">
+   <children>
+       <StackPane focusTraversable="true" maxHeight="Infinity" minHeight="400" prefHeight="-1" prefWidth="-1" styleClass="background" VBox.vgrow="ALWAYS">
+           <padding>
+               <Insets bottom="0.0" left="20.0" right="20.0" top="5.0" />
+           </padding>
+           <VBox>
+               <children>
+               <JFXToolbar id="toolBar" maxHeight="40.0" minHeight="34.0" prefHeight="34.0" prefWidth="760.0" VBox.vgrow="SOMETIMES">
+                  <right>
+                      <HBox alignment="CENTER" spacing="4" style="-fx-padding: 0 0 0 50;">
+                          <children>
+                              <JFXColorPicker fx:id="colorPicker" minWidth="100" BorderPane.alignment="CENTER" />
+                          </children>
+                      </HBox>
+                  </right>
+                  <left>
+                     <JFXButton id="searchButton" fx:id="searchButton" buttonType="RAISED" graphicTextGap="10" VBox.vgrow="NEVER" minHeight="28" maxHeight="36" prefHeight="28.0" prefWidth="272.0" text="搜索" BorderPane.alignment="CENTER">
+                        <graphic>
+                           <TextField id="searchField" fx:id="searchField" prefHeight="23.0" VBox.vgrow="NEVER" minHeight="23" maxHeight="31" prefWidth="215.0" />
+                        </graphic>
+                     </JFXButton>
+                  </left>
+               </JFXToolbar>
+                   <JFXTextArea fx:id="textArea" maxHeight="Infinity" minHeight="400" prefHeight="-1" prefWidth="-1" VBox.vgrow="ALWAYS" />
+               </children>
+           </VBox>
+       </StackPane>
+       <HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER">
+           <children>
+               <Label fx:id="cstate" maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" HBox.hgrow="ALWAYS">
+                   <font>
+                       <Font size="11.0" fx:id="x3" />
+                   </font>
+                   <textFill>
+                       <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+                   </textFill>
+               </Label>
+               <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+               <Label fx:id="charCount" font="$x3" maxWidth="-1.0" text="Right status" textFill="$x4" HBox.hgrow="NEVER" />
+           </children>
+           <padding>
+               <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+           </padding>
+       </HBox>
+   </children>
+</VBox>

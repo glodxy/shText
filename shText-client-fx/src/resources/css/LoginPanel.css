@@ -1,0 +1,49 @@
+.root{
+    -fx-background-image: url("/resources/img/loginback.jpg");
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+
+.text{
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-font-family: "Myriad Pro";
+    -fx-font-size: 16px;
+}
+
+.text-field{
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #111111;
+    -jfx-unfocus-color: #ffffff00;
+    -jfx-focus-color: #111111;
+    -fx-prompt-text-fill: #11111133;
+    -fx-font-family: "Myriad Pro Light";
+}
+
+.hbox{
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+.loginButton{
+    -fx-padding: 0.7em 0.57em;
+    -fx-pref-width: 80;
+    -fx-pref-height: 40;
+    -fx-font-size: 14pt;
+    -fx-background-color: rgb(77, 102, 204);
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}
+
+.registButton{
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-font-family: "Myriad Pro";
+    -fx-font-size: 5pt;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
